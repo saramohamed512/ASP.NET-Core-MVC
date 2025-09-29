@@ -30,18 +30,19 @@ namespace test01.Controllers
 
         #endregion
         #region Action Parameter
-        public IActionResult Index() 
-        { 
-            return Content("Hello From Movies"); 
-        }
-        public IActionResult GetMovie(int id , string name)
-        {
-            //1. Send the data from form
-            //2. Send the data via Sigment of URL
-            //3. Send the data via Query
-            return Content($"Movie :  {id} | Name : {name}");
-        }
+        //public IActionResult Index() 
+        //{ 
+        //    return Content("Hello From Movies"); 
+        //}
+        //public IActionResult GetMovie(int id , string name)
+        //{
+        //    //1. Send the data from form
+        //    //2. Send the data via Sigment of URL
+        //    //3. Send the data via Query
+        //    return Content($"Movie :  {id} | Name : {name}");
+        //}
         #endregion
+
 
     }
 }
