@@ -38,7 +38,7 @@ namespace test01
                 endpoints.MapControllerRoute
                 (
                     name:"default",
-                    pattern: "{Controller}/{Action}/{id:alpha}"
+                    pattern: "{Controller}/{Action}"
                     //pattern: "{Controller=Movies}/{Action=Index}/" //by default will go to the index action
 
 
