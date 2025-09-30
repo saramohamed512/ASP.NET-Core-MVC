@@ -1,0 +1,50 @@
+﻿@{
+    Layout = "_AuthLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SignIn</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-4">
+                        <h3 class="text-center mb-4">Sign In</h3>
+                        <form method="post" action="/Account/SignIn">
+                            <div class="mb-3">
+                                <label for="Email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe">
+                                    <label class="form-check-label" for="rememberMe">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <a href="/Account/ForgotPassword" class="small">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Sign In</button>
+                        </form>
+                        <hr>
+                        <p class="text-center mb-0">
+                            Don't have an account?
+                            <a href="/Account/Register">Register</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

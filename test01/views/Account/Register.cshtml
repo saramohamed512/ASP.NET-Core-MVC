@@ -1,0 +1,50 @@
+﻿
+@{
+    Layout = "_AuthLayout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Register</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-4">
+                        <h3 class="text-center mb-4">Create an Account</h3>
+                        <form method="post" action="/Account/Register">
+                            <div class="mb-3">
+                                <label for="FullName" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="FullName" name="FullName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="Email" name="Email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter your password" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="ConfirmPassword" name="ConfirmPassword" placeholder="Confirm your password" required>
+                            </div>
+                            <button type="submit" class="btn btn-success w-100">Register</button>
+                        </form>
+                        <hr>
+                        <p class="text-center mb-0">
+                            Already have an account?
+                            <a href="/Account/SignIn">Sign In</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
