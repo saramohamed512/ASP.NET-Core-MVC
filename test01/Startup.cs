@@ -29,17 +29,21 @@ namespace test01
 
             app.UseRouting();
 
+            //To Use Static Files like Css , Js , Images use this line
+            app.UseStaticFiles();
+
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                //endpoints.MapGet("/", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+                //});
                 endpoints.MapControllerRoute
                 (
                     name:"default",
-                    pattern: "{Controller}/{Action}"
+                    //pattern: "{Controller}/{Action}"
                     //pattern: "{Controller=Movies}/{Action=Index}/" //by default will go to the index action
+                    pattern: "{Controller=Home}/{Action=Index}" //by default will go to the index action
 
 
                 );
